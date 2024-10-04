@@ -1,3 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 import 'package:domi/gen/assets.gen.dart';
 import 'package:domi/model/location.dart';
 import 'package:domi/presentation/common/address_item.dart';
@@ -6,14 +10,13 @@ import 'package:domi/presentation/common/mobile_primary_button.dart';
 import 'package:domi/presentation/home/bloc/home_bloc.dart';
 import 'package:domi/utils/app_colors.dart';
 import 'package:domi/utils/app_textstyle.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:provider/provider.dart';
 
 class AddressScreen extends StatefulWidget {
-  const AddressScreen({super.key});
-
+  const AddressScreen({
+    super.key,
+    this.onNextPressed,
+  });
+  final Future Function()? onNextPressed;
   @override
   State<AddressScreen> createState() => _AddressScreenState();
 }
@@ -156,7 +159,7 @@ class _AddressScreenState extends State<AddressScreen> {
                   children: [
                     const SizedBox(height: 16),
                     MobilePrimaryButton(
-                        onPressed: selectedLocation != null ? () {} : null,
+                        onPressed: selectedLocation != null ? widget.onNextPressed : null,
                         text: "Claim Your Address"),
                   ],
                 ),

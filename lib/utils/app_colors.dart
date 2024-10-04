@@ -10,6 +10,7 @@ class AppColors {
   static const borderColor = Color(0x330A0F1F);
   static const cardBorder = Color(0x33000000);
   static const labelBackground = Color(0xff141619);
+  static const buttonTertiaryLime = Color(0xffCCFF00);
 
 
   static const primaryAcctive = Color(0xFF0000E5);

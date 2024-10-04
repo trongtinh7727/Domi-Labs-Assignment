@@ -7,7 +7,7 @@ import 'package:domi/utils/app_textstyle.dart';
 
 class MobileInputField extends StatelessWidget {
   const MobileInputField({
-    Key? key,
+    super.key,
     this.suffixIcon,
     this.preffixIcon,
     required this.rightIcon,
@@ -17,7 +17,7 @@ class MobileInputField extends StatelessWidget {
     this.focusNode,
     this.controller,
     this.onChanged,
-  }) : super(key: key);
+  });
 
   final Widget? suffixIcon;
   final Widget? preffixIcon;

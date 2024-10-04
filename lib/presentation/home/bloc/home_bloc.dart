@@ -4,6 +4,8 @@ import 'package:rxdart/rxdart.dart';
 class HomeBloc {
   final BehaviorSubject<Location?> locationController =
       BehaviorSubject<Location?>();
+  final BehaviorSubject<double?> costController =
+      BehaviorSubject<double?>();
   Location? selectedLocation;
   final List<Location> _locations = [
     Location(street: '4A Building', state: 'District 1'),
@@ -20,6 +22,10 @@ class HomeBloc {
     return _locations.where((Location location) {
       return location.street.toLowerCase().contains(text.toLowerCase());
     });
+  }
+
+  void onCostChange(double? value) {
+    costController.sink.add(value);
   }
 
   void onSelectLocation(Location? location) {
