@@ -92,3 +92,9 @@ lib─
 The app follows the BLoC (Business Logic Component) pattern for state management, particularly in the presentation/home/bloc/ directory. The BLoC pattern is used to separate the business logic from the presentation layer, ensuring a clean and reactive architecture.
 
 # Screenshots or Screen Recordings:
+<img src="https://github.com/user-attachments/assets/99cc22de-2a39-4293-bd61-1adbc5f56061" width="300"/>
+<img src="https://github.com/user-attachments/assets/da277f76-a7a2-452c-9549-5e77689dbab7" width="300"/>
+<img src="https://github.com/user-attachments/assets/808223ac-3c11-4f25-8a80-479486b4a2c4" width="300"/>
+
+
+
