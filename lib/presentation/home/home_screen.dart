@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: Text(
-                      '\$${cost}/mo',
+                      '\$$cost/mo',
                       style: AppTextstyle.desktopBodyB4
                           .copyWith(color: AppColors.textWhite),
                     ),
