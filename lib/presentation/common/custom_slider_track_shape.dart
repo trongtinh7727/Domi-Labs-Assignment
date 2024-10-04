@@ -43,7 +43,7 @@ class CustomSliderTrackShape extends SliderTrackShape {
     final Paint inactiveTrackPaint = Paint()
       ..color = sliderTheme.inactiveTrackColor ?? Colors.grey
       ..style = PaintingStyle.fill;
-    final Radius trackRadius =  Radius.circular(4);
+    const Radius trackRadius =   Radius.circular(4);
     canvas.drawRRect(
       RRect.fromRectAndRadius(
         Rect.fromLTRB(
